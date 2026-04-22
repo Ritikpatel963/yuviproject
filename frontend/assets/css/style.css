@@ -1,0 +1,225 @@
+/* 
+   ==========================================================================
+   DR. YUVI - NEXT-GEN "FLUID EDITORIAL" DESIGN SYSTEM (BOOTSTRAP 5)
+   ========================================================================== 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+    /* Calm Luxury Palette */
+    --midnight: #121212;
+    --silk: #FAF9F6;
+    --sage: #8CA595;
+    --gold: #C5A059;
+    --text-main: #1A1A1A;
+    --text-muted: #6B7280;
+    --white: #ffffff;
+    
+    /* Layout Tokens */
+    --header-h: 80px;
+    --radius: 16px;
+    --radius-lg: 32px;
+    --shadow-premium: 0 40px 60px -20px rgba(0,0,0,0.08);
+    
+    /* Transitions */
+    --transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    --bounce: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Base Overrides */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--silk);
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+}
+
+/* Header & Glassmorphism */
+.glass-header {
+    height: var(--header-h);
+    background: rgba(250, 249, 246, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+    z-index: 1030;
+}
+.navbar-brand {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: var(--midnight) !important;
+}
+.nav-link {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--midnight) !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+.nav-link:hover {
+    color: var(--sage) !important;
+}
+
+/* Custom Buttons */
+.btn-magnetic {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 99px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: var(--transition);
+}
+.btn-dark-custom {
+    background: var(--midnight);
+    color: var(--white);
+    border: none;
+}
+.btn-dark-custom:hover {
+    transform: scale(1.05);
+    background: #000;
+    color: var(--white);
+}
+
+.btn-outline-custom {
+    border: 1px solid var(--midnight);
+    color: var(--midnight);
+    background: transparent;
+}
+.btn-outline-custom:hover {
+    background: var(--midnight);
+    color: var(--white);
+}
+
+/* Bento Grid Utilities */
+.bento-item {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: var(--bounce);
+    border: 1px solid rgba(0,0,0,0.03);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    height: 100%;
+}
+.bento-item:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: var(--shadow-premium);
+    border-color: rgba(140, 165, 149, 0.2);
+}
+
+.bento-photo::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+}
+
+.bento-stat {
+    background: var(--sage);
+    color: var(--white);
+}
+
+.bento-cta {
+    background: var(--midnight);
+    color: var(--white);
+}
+.bento-cta-arrow {
+    background: var(--white);
+    color: var(--midnight);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+}
+
+/* Services Hover Layer */
+.svc-layer {
+    position: relative;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+}
+.svc-layer:hover {
+    background: var(--white);
+    padding-left: 60px;
+}
+.svc-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    color: var(--sage);
+}
+
+/* Micro-animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+
+/* Typographic Colors */
+.text-sage { color: var(--sage); }
+.text-gold { color: var(--gold); }
+.text-muted-custom { color: var(--text-muted); }
+
+/* Forms */
+.form-control-custom {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0;
+    padding: 12px 0;
+    box-shadow: none !important;
+}
+.form-control-custom:focus {
+    border-bottom-color: var(--midnight);
+    background: transparent;
+}
+.form-label-custom {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+/* General Layout Fixes */
+.section-padding { padding: 60px 0; }
+@media (min-width: 992px) {
+    .section-padding { padding: 80px 0; }
+}

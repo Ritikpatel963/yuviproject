@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assessment | Dr. Yuvraj Jadeja</title>
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="Find the best fertility path for you with our free interactive assessment.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- OVERLAY -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+<!-- RIGHT DRAWER -->
+<aside class="drawer" id="drawer" aria-label="Site navigation" role="dialog" aria-modal="true">
+  <div class="drawer-top">
+    <a href="index.html" class="drawer-logo">DR. <span>YUVI</span></a>
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="drawer-nav">
+    <a href="index.html" class="drawer-link active">Home<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="about.html" class="drawer-link">About Dr. Yuvi<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="services.html" class="drawer-link">Services<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="gallery.html" class="drawer-link">Gallery<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="blog.html" class="drawer-link">Health Blog<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="success-stories.html" class="drawer-link">Success Stories<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="contact.html" class="drawer-link">Contact<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <hr class="drawer-divider">
+    <span class="drawer-nav-label" style="margin-top:0.4rem;">Locations</span>
+    <a href="#" class="drawer-link" style="font-family:'DM Sans',sans-serif;font-size:0.88rem;font-weight:500;">Nimaaya Surat<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></a>
+    <a href="#" class="drawer-link" style="font-family:'DM Sans',sans-serif;font-size:0.88rem;font-weight:500;">Nimaaya Vadodara<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></a>
+    <hr class="drawer-divider">
+    <span class="drawer-nav-label" style="margin-top:0.4rem;">Contact</span>
+    <a href="tel:+919999999999" class="drawer-link">+91 9999999999<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+    <a href="mailto:appointment@docteryuvi.com" class="drawer-link">appointment@docteryuvi.com<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+    <a href="https://wa.me/919999999999" target="_blank" class="drawer-link">WhatsApp Consultation<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.8 11.8 0 0 0 12.05 0C5.52 0 .2 5.32.2 11.86c0 2.09.55 4.13 1.6 5.93L0 24l6.37-1.67a11.8 11.8 0 0 0 5.68 1.45h.01c6.53 0 11.85-5.32 11.85-11.86 0-3.17-1.23-6.15-3.39-8.32z"/></svg></a>
+  </nav>
+</aside>
+
+<!-- TOP BAR -->
+<div class="top-nav-bar">
+  <div class="top-nav-inner">
+    <div class="top-nav-contact">
+      <a href="tel:+919999999999"><span>Phone:</span> +91 999 999 9999</a>
+      <a href="mailto:appointment@docteryuvi.com"><span>Email:</span> appointment@docteryuvi.com</a>
+      <a href="https://wa.me/919999999999" target="_blank"><span>WhatsApp:</span> Chat Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/63e0fe368fba6.png" alt="Dr Yuvraj Jadeja" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <span style="display:none;font-family:'DM Serif Display',serif;font-size:1.35rem;">DR. <span style="color:var(--crimson)">YUVI</span></span>
+    </a>
+    <ul class="nav-center">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="success-stories.html">Stories</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="quiz.html" class="nav-cta">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- QUIZ SECTION -->
+<section class="quiz-section" aria-label="Interactive Assessment">
+  <div class="quiz-container reveal">
+    <div class="quiz-progress">
+      <div class="quiz-progress-bar" id="quizProgressBar"></div>
+    </div>
+
+    <!-- STEP 1: Questions -->
+    <div id="quizFormView">
+      <div class="quiz-header">
+        <span class="quiz-step" id="quizStepText">Question 1 of 21</span>
+        <!-- Section badge -->
+        <span class="quiz-section-badge" id="quizSectionBadge">Female Health</span>
+      </div>
+
+      <div class="quiz-body" aria-live="polite">
+        <h2 class="quiz-question" id="quizQuestionText">Loading Question...</h2>
+        <div class="quiz-options">
+          <button class="quiz-btn" onclick="handleAnswer('Yes')">Yes</button>
+          <button class="quiz-btn" onclick="handleAnswer('No')">No</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 2: Teaser -->
+    <div id="quizTeaserView" class="quiz-view-teaser" style="display:none;">
+      <h2 class="quiz-teaser-title">Your Fertility Score: <span style="color:var(--gold);">Moderate ⚠️</span></h2>
+      <p class="quiz-teaser-desc">You may have some concerns that need attention...</p>
+      <div class="teaser-blur-box">
+        <div class="teaser-blur-content">
+          <h4 style="margin-bottom:1rem;">Detailed Medical Analysis</h4>
+          <p>Based on your age and lifestyle factors, we have identified specific metrics that could be influencing your clinical fertility journey right now.</p>
+          <ul style="margin-top:1rem;padding-left:1.5rem;">
+            <li>Hormonal alignment indicators</li>
+            <li>Cycle regularity impact</li>
+            <li>Lifestyle and historical factors</li>
+            <li>Male partner fertility factors</li>
+          </ul>
+        </div>
+        <div class="teaser-blur-overlay">
+          <button class="btn-primary-dark" onclick="showLeadView()">Unlock Full Results <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 3: Lead Capture -->
+    <div id="quizLeadView" class="quiz-view-lead" style="display:none;">
+      <h2 class="quiz-lead-title">Where should we send your results?</h2>
+      <p class="quiz-lead-desc">Enter your details to instantly unlock your customised fertility map.</p>
+      <div class="quiz-form">
+        <div class="form-group">
+          <label for="leadName">Full Name</label>
+          <input type="text" id="leadName" class="form-input" placeholder="Jane Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="leadPhone">Phone Number</label>
+          <input type="tel" id="leadPhone" class="form-input" placeholder="+91 999 999 9999" required>
+        </div>
+        <div class="form-group">
+          <label for="leadEmail">Email Address (Optional)</label>
+          <input type="email" id="leadEmail" class="form-input" placeholder="jane@example.com">
+        </div>
+        <div class="form-group">
+          <label for="leadCity">City (Optional)</label>
+          <input type="text" id="leadCity" class="form-input" placeholder="Ahmedabad">
+        </div>
+        <button class="btn-primary-dark btn-full-width" onclick="submitLead()">Unlock My Results &rarr;</button>
+      </div>
+    </div>
+
+    <!-- STEP 4: Final View (NO JSON shown) -->
+    <div class="quiz-final quiz-view-final" id="quizFinal" style="display:none;">
+      <h2 class="quiz-question quiz-final-title">Your Full Assessment</h2>
+      <div class="final-result-card">
+        <p id="finalResultText"></p>
+      </div>
+      <p class="quiz-final-text">Take the next step with expert guidance.</p>
+      <div class="cta-btns flex-center">
+        <a href="contact.html" class="btn-primary-dark">Book Free Consultation</a>
+        <a href="https://wa.me/919999999999" target="_blank" class="btn-outline">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          WhatsApp Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <span class="footer-brand"><img src="assets/img/63e0fe368fba6.png" alt="Dr Yuvraj Jadeja Logo" style="max-height:48px;width:auto;object-fit:contain;"></span>
+      <p class="footer-desc">Ethical, evidence-based fertility and women's health care in Ahmedabad. This website is for information only and not a substitute for medical advice.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="#" class="social-btn" aria-label="YouTube"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+        <a href="#" class="social-btn" aria-label="WhatsApp"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h5>Explore</h5>
+      <ul><li><a href="services.html">Services Overview</a></li><li><a href="about.html">About Dr. Yuvi</a></li><li><a href="blog.html">Health Blog</a></li><li><a href="success-stories.html">Success Stories</a></li></ul>
+    </div>
+    <div>
+      <h5>Patient</h5>
+      <ul><li><a href="contact.html">Book Appointment</a></li><li><a href="#">FAQ</a></li><li><a href="#">Clinic Policies</a></li><li><a href="#">Privacy Policy</a></li></ul>
+    </div>
+    <div>
+      <h5>Connect</h5>
+      <ul><li><a href="mailto:appointments@doctoryuvi.com">appointments@doctoryuvi.com</a></li><li><a href="tel:+919999999999">+91 999 999 9999</a></li><li><a href="#">WhatsApp</a></li><li><a href="#">Google Maps</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Dr. Yuvraj Jadeja. All Rights Reserved.</p>
+    <p>Designed with care · Ahmedabad, India</p>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script>
+  // Drawer logic
+  const hamburger = document.getElementById('hamburger');
+  const drawer = document.getElementById('drawer');
+  const drawerOverlay = document.getElementById('drawerOverlay');
+  const drawerClose = document.getElementById('drawerClose');
+
+  function openDrawer() {
+    drawer.classList.add('open');
+    drawerOverlay.classList.add('active');
+    hamburger.classList.add('active');
+    hamburger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer() {
+    drawer.classList.remove('open');
+    drawerOverlay.classList.remove('active');
+    hamburger.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+  hamburger.addEventListener('click', () => {
+    drawer.classList.contains('open') ? closeDrawer() : openDrawer();
+  });
+  drawerOverlay.addEventListener('click', closeDrawer);
+  drawerClose.addEventListener('click', closeDrawer);
+
+  const reveals = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 70);
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  reveals.forEach(el => revealObserver.observe(el));
+
+
+  // ── QUIZ QUESTIONS ──
+  // section: 'female' | 'male'
+  const quizQuestions = [
+    // ── FEMALE (19 questions) ──
+    { id: "trying_over_1yr",        section: "female", question: "Have you had unprotected intercourse for more than a year without becoming pregnant?" },
+    { id: "over_35_6mo",            section: "female", question: "Are you nearing or over 35, and have had unprotected intercourse for 6 months without becoming pregnant?" },
+    { id: "pelvic_infection_std",   section: "female", question: "Do you have a history of pelvic infection or a sexually transmitted disease?" },
+    { id: "clomid_no_pregnancy",    section: "female", question: "Have you been treated with Clomid without becoming pregnant?" },
+    { id: "over_38_future_preg",    section: "female", question: "Are you 38 years or older and contemplating a pregnancy in the future?" },
+    { id: "endometriosis_history",  section: "female", question: "Do you have a personal or family history of endometriosis and would like to get pregnant some day?" },
+    { id: "uterine_abnormality",    section: "female", question: "Have you been diagnosed with a uterine abnormality or structural defect?" },
+    { id: "two_miscarriages",       section: "female", question: "Have you had two or more miscarriages or chemical pregnancies?" },
+    { id: "pcos_insulin",           section: "female", question: "Do you have a diagnosis of PCOS, PCOD, or insulin resistance?" },
+    { id: "irregular_cycles",       section: "female", question: "Are your menstrual cycles irregular (longer than 35 days from start of one to start of next)?" },
+    { id: "cancer_fertility",       section: "female", question: "Have you been recently diagnosed with cancer, or have a family history of cancer, and would like to maintain reproductive potential?" },
+    { id: "early_menopause_family", section: "female", question: "Do you have a family history of early menopause (occurring before age 45)?" },
+    { id: "fibroids_conceive",      section: "female", question: "Have you been diagnosed with uterine fibroids and would like to conceive in the future?" },
+    { id: "heavy_painful_periods",  section: "female", question: "Do you have especially heavy or painful menstrual periods?" },
+    { id: "hair_acne_discharge",    section: "female", question: "Do you have unexplained extra hair growth, acne, or breast discharge?" },
+    { id: "bad_eggs",               section: "female", question: "Have you been told you have \"bad eggs\" and would still like to have a baby?" },
+    { id: "menopausal_conceive",    section: "female", question: "Has anyone told you that you are menopausal, but you would still like to conceive?" },
+    { id: "family_birth_defect",    section: "female", question: "Do you or your husband have a family history of an inherited birth defect or abnormality, and you would like to have a child without this problem?" },
+    { id: "genetic_carrier",        section: "female", question: "Are you or your male partner carriers of genetic mutations for Cystic Fibrosis, Sickle Cell, Thalassemia, Fragile X, or other mutations you do not want to pass to your child?" },
+
+    // ── MALE (2 questions) ──
+    { id: "male_testicular_trauma", section: "male",   question: "Has your male partner had any type of testicular trauma, defect, or surgery?" },
+    { id: "male_ejaculation_issues",section: "male",   question: "Has your male partner had problems with ejaculation, general infections, or erections?" }
+  ];
+
+  let currentQuestionIndex = 0;
+  const userAnswers = {};
+
+  const questionTextEl  = document.getElementById('quizQuestionText');
+  const stepTextEl      = document.getElementById('quizStepText');
+  const progressBarEl   = document.getElementById('quizProgressBar');
+  const sectionBadgeEl  = document.getElementById('quizSectionBadge');
+
+  const quizFormView    = document.getElementById('quizFormView');
+  const quizTeaserView  = document.getElementById('quizTeaserView');
+  const quizLeadView    = document.getElementById('quizLeadView');
+  const quizFinalView   = document.getElementById('quizFinal');
+
+  function loadQuestion() {
+    const currentQ = quizQuestions[currentQuestionIndex];
+    questionTextEl.textContent = currentQ.question;
+    stepTextEl.textContent = `Question ${currentQuestionIndex + 1} of ${quizQuestions.length}`;
+    progressBarEl.style.width = `${(currentQuestionIndex / quizQuestions.length) * 100}%`;
+
+    // Update section badge
+    if (currentQ.section === 'female') {
+      sectionBadgeEl.textContent = '♀ Female Health';
+      sectionBadgeEl.className = 'quiz-section-badge badge-female';
+    } else {
+      sectionBadgeEl.textContent = '♂ Male Health';
+      sectionBadgeEl.className = 'quiz-section-badge badge-male';
+    }
+  }
+
+  function handleAnswer(answerValue) {
+    const currentQ = quizQuestions[currentQuestionIndex];
+    userAnswers[currentQ.id] = answerValue;
+    currentQuestionIndex++;
+
+    if (currentQuestionIndex < quizQuestions.length) {
+      loadQuestion();
+    } else {
+      showTeaserView();
+    }
+  }
+
+  function showTeaserView() {
+    progressBarEl.style.width = '100%';
+    quizFormView.style.display = 'none';
+    quizTeaserView.style.display = 'block';
+  }
+
+  function showLeadView() {
+    quizTeaserView.style.display = 'none';
+    quizLeadView.style.display = 'block';
+  }
+
+  function submitLead() {
+    const name  = document.getElementById('leadName').value.trim();
+    const phone = document.getElementById('leadPhone').value.trim();
+
+    if (!name || !phone) {
+      alert("Please enter at least your Name and Phone Number.");
+      return;
+    }
+
+    // Attach lead info to answers (for backend POST only — not shown to user)
+    userAnswers['lead_name']  = name;
+    userAnswers['lead_phone'] = phone;
+    userAnswers['lead_email'] = document.getElementById('leadEmail').value.trim();
+    userAnswers['lead_city']  = document.getElementById('leadCity').value.trim();
+
+    // Build a readable result message
+    const yesCount = Object.entries(userAnswers)
+      .filter(([k, v]) => !k.startsWith('lead_') && v === 'Yes').length;
+    let resultMsg = '';
+    if (yesCount === 0) {
+      resultMsg = "Based on your responses, you have no immediate red flags. However, if you are planning to conceive, a routine consultation with Dr. Yuvi is always a great first step.";
+    } else if (yesCount <= 3) {
+      resultMsg = `You answered "Yes" to ${yesCount} concern(s). There are some areas worth discussing with a specialist. We recommend booking a consultation to explore your options and get a personalised care plan.`;
+    } else {
+      resultMsg = `You answered "Yes" to ${yesCount} concern(s), indicating moderate to significant fertility-related factors. We strongly recommend a comprehensive clinical evaluation with Dr. Yuvi to identify the best path forward for you.`;
+    }
+    document.getElementById('finalResultText').textContent = resultMsg;
+
+    // Transition to final CTA (no JSON shown)
+    quizLeadView.style.display = 'none';
+    quizFinalView.style.display = 'block';
+
+    // Send to backend (uncomment when ready)
+    /*
+    fetch('/api/submit-quiz-lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(userAnswers)
+    });
+    */
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    loadQuestion();
+  });
+</script>
+</body>
+</html>
